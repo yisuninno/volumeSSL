@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=4,5 python -m torch.distributed.launch --nproc_per_node=2 --master_port=4343 train_kitti.py --start_ep=1 --nEpochs=600 --batchSize=4 --crop_height=240 --crop_width=528 --threads=4
